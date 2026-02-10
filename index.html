@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting…</title>
+
+  <script>
+    (function () {
+      const userLang = navigator.language || navigator.userLanguage;
+      
+      if (userLang.startsWith('ru')) {
+        window.location.replace('ru.html');
+      } else {
+        window.location.replace('en.html');
+      }
+    })();
+  </script>
+</head>
+<body></body>
+</html>
